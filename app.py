@@ -53,7 +53,7 @@ st.title("India Data Reviews")
 select_state = st.sidebar.selectbox("Select State", options=states)
 select_pri = st.sidebar.selectbox("Primary element", options=values)
 select_sec = st.sidebar.selectbox("Secondary element", options=values)
-top5_states = st.sidebar.checkbox("Show Top 5 States")
+top5_states = st.sidebar.checkbox("Show Top 10 States")
 
 btn = st.sidebar.button(label="Analyze")
 
