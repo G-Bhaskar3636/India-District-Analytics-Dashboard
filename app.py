@@ -64,7 +64,7 @@ if btn:
     else:
         # Plot for India
         if top5_states:
-            st.subheader("Top 10 States Analysis")
+            st.subheader("Top-10 States Analysis")
 
             top10_states = df.groupby(['State', 'District'])[['Latitude', 'Longitude', select_pri, select_sec]].sum().sort_values(by=[select_pri, select_sec], ascending=False).head(10)
             top10_states = top10_states.reset_index()
